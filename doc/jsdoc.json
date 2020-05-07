@@ -1,0 +1,378 @@
+[
+  {
+    "comment": "/**\n * Configure the smartdown runtime.\n *\n * This function should be called once per page, and is responsible\n * for loading Smartdown and its dependent libraries, initializing per-page\n * data structures, and optionally loading an initial Smartdown document.\n * Upon the asynchronous completion of these tasks, the loadedHandler\n * will be called.\n *\n * @param {object} [options={}] - Configuration options\n * @param {object} options.media - media\n * @param {string} options.baseURL - baseURL\n * @param {function} options.cardLoader\n * This cardLoader function is called whenever Smartdown needs to load\n * a new Smartdown document into a particular div. This can be on initial\n * load, and via the result of a {@link tunnel} operation.\n * @param {object} options.calcHandlers - calcHandlers\n * @param {object} options.linkRules - linkRules\n * @param {function} [loadedHandler=null] - Called when loading and configuration\n * is completed.\n *\n */",
+    "meta": {
+      "range": [
+        98115,
+        102454
+      ],
+      "filename": "index.js",
+      "lineno": 3521,
+      "columnno": 0,
+      "path": "/Users/bud/DoctorBud/smartdown/src",
+      "code": {
+        "id": "astnode100011098",
+        "name": "configure",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "options",
+          "loadedHandler"
+        ]
+      },
+      "vars": {
+        "media": "configure~media",
+        "_baseURL": "configure~_baseURL",
+        "_cardLoader": "configure~_cardLoader",
+        "_calcHandlers": "configure~_calcHandlers",
+        "_linkRules": "configure~_linkRules",
+        "cardLoader": "configure~cardLoader",
+        "calcHandlers": "configure~calcHandlers",
+        "mediaRegistry": "configure~mediaRegistry",
+        "window.mediaRegistry": "window.mediaRegistry",
+        "svgLoaded": "configure~svgLoaded",
+        "key": "configure~key",
+        "url": "configure~url",
+        "mediaRegistry[undefined]": "configure~mediaRegistry[undefined]",
+        "mediaRegistry[undefined].type": "configure~mediaRegistry[undefined].type",
+        "mediaRegistry[undefined].url": "configure~mediaRegistry[undefined].url",
+        "mediaRegistry[undefined].expandedurl": "configure~mediaRegistry[undefined].expandedurl",
+        "mediaRegistry[undefined].svgData": "configure~mediaRegistry[undefined].svgData",
+        "oReq": "configure~oReq",
+        "oReq.svgKey": "configure~oReq.svgKey",
+        "window.smartdown.baseURL": "window.smartdown.baseURL",
+        "st": "configure~st",
+        "currentBase": "configure~currentBase",
+        "lastSlash": "configure~lastSlash",
+        "__webpack_public_path__": "configure~__webpack_public_path__",
+        "window.xypicURL": "window.xypicURL",
+        "window.MathJax": "window.MathJax",
+        "global.MathJax": "global.MathJax",
+        "": null,
+        "completeStartup": "configure~completeStartup",
+        "testing": "configure~testing",
+        "mathjaxURL": "configure~mathjaxURL"
+      }
+    },
+    "description": "Configure the smartdown runtime.\n\nThis function should be called once per page, and is responsible\nfor loading Smartdown and its dependent libraries, initializing per-page\ndata structures, and optionally loading an initial Smartdown document.\nUpon the asynchronous completion of these tasks, the loadedHandler\nwill be called.",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": "{}",
+        "description": "Configuration options",
+        "name": "options"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "media",
+        "name": "options.media"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "baseURL",
+        "name": "options.baseURL"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "This cardLoader function is called whenever Smartdown needs to load\na new Smartdown document into a particular div. This can be on initial\nload, and via the result of a {@link tunnel} operation.",
+        "name": "options.cardLoader"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "calcHandlers",
+        "name": "options.calcHandlers"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "linkRules",
+        "name": "options.linkRules"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "optional": true,
+        "defaultvalue": null,
+        "description": "Called when loading and configuration\nis completed.",
+        "name": "loadedHandler"
+      }
+    ],
+    "name": "configure",
+    "longname": "configure",
+    "kind": "function",
+    "scope": "global",
+    "$longname": "configure",
+    "$kind": "method",
+    "$docmaLink": "api/#configure"
+  },
+  {
+    "comment": "",
+    "meta": {
+      "range": [
+        82128,
+        82351
+      ],
+      "filename": "index.js",
+      "lineno": 2984,
+      "columnno": 2,
+      "path": "/Users/bud/DoctorBud/smartdown/src",
+      "code": {
+        "id": "astnode100009318",
+        "name": "DisclosableSettings",
+        "type": "MethodDefinition",
+        "paramnames": []
+      },
+      "vars": {
+        "": null
+      }
+    },
+    "undocumented": true,
+    "name": "DisclosableSettings",
+    "longname": "DisclosableSettings",
+    "kind": "class",
+    "scope": "global",
+    "params": [],
+    "$longname": "DisclosableSettings",
+    "$kind": "constructor",
+    "$docmaLink": "api/#DisclosableSettings"
+  },
+  {
+    "comment": "/**\n * Load a script URL into the DOM by adding a script element\n *\n * Note that this doesn't check whether the script is already loaded.\n *\n * @param {sSrc} - URL\n * @param {fOnload} Called on successful load\n * @param {fOnerror} Called on error\n *\n */",
+    "meta": {
+      "range": [
+        254,
+        515
+      ],
+      "filename": "importers.js",
+      "lineno": 11,
+      "columnno": 0,
+      "path": "/Users/bud/DoctorBud/smartdown/distdocts/src",
+      "code": {
+        "id": "astnode100015546",
+        "name": "expandSrc",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "sSrc"
+        ]
+      },
+      "vars": {
+        "basePrefix": "expandSrc~basePrefix",
+        "expandedSrc": "expandSrc~expandedSrc"
+      }
+    },
+    "description": "Load a script URL into the DOM by adding a script element\n\nNote that this doesn't check whether the script is already loaded.",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "sSrc"
+          ]
+        },
+        "description": "URL",
+        "name": "sSrc"
+      },
+      {
+        "type": {
+          "names": [
+            "fOnload"
+          ]
+        },
+        "description": "on successful load",
+        "name": "Called"
+      },
+      {
+        "type": {
+          "names": [
+            "fOnerror"
+          ]
+        },
+        "description": "on error",
+        "name": "Called"
+      }
+    ],
+    "name": "expandSrc",
+    "longname": "expandSrc",
+    "kind": "function",
+    "scope": "global",
+    "$longname": "expandSrc",
+    "$kind": "method",
+    "$docmaLink": "api/#expandSrc"
+  },
+  {
+    "comment": "/**\n * Initialize the smartdown runtime.\n *\n * @constructor\n * @param {object} media - media\n * @param {string} baseURL - baseURL\n * @param {function} loadedHandler - loadedHandler\n * @param {function} cardLoader - cardLoader\n * @param {object} calcHandlers - calcHandlers\n * @param {object} linkRules - linkRules\n *\n */",
+    "meta": {
+      "range": [
+        102780,
+        103059
+      ],
+      "filename": "index.js",
+      "lineno": 3671,
+      "columnno": 0,
+      "path": "/Users/bud/DoctorBud/smartdown/src",
+      "code": {
+        "id": "astnode100011601",
+        "name": "initialize",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "media",
+          "baseURL",
+          "loadedHandler",
+          "cardLoader",
+          "calcHandlers",
+          "linkRules"
+        ]
+      },
+      "vars": {
+        "options": "initialize~options"
+      }
+    },
+    "description": "Initialize the smartdown runtime.",
+    "kind": "class",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "media",
+        "name": "media"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "description": "baseURL",
+        "name": "baseURL"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "loadedHandler",
+        "name": "loadedHandler"
+      },
+      {
+        "type": {
+          "names": [
+            "function"
+          ]
+        },
+        "description": "cardLoader",
+        "name": "cardLoader"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "calcHandlers",
+        "name": "calcHandlers"
+      },
+      {
+        "type": {
+          "names": [
+            "object"
+          ]
+        },
+        "description": "linkRules",
+        "name": "linkRules"
+      }
+    ],
+    "name": "initialize",
+    "longname": "initialize",
+    "scope": "global",
+    "$longname": "initialize",
+    "$kind": "constructor",
+    "$docmaLink": "api/#initialize"
+  },
+  {
+    "comment": "/**\n * Ensure that an extension is loaded\n *\n * Call the {loaded} completion function when the extension is loaded,\n * which may be immediately when this function is called subsequent to\n * a successful load.\n *\n * @param {name} - Extension name (e.g., 'd3')\n * @param {loaded} Called on successful load\n *\n */",
+    "meta": {
+      "range": [
+        1569,
+        3309
+      ],
+      "filename": "extensions.js",
+      "lineno": 49,
+      "columnno": 0,
+      "path": "/Users/bud/DoctorBud/smartdown/distdocts/src",
+      "code": {
+        "id": "astnode100015016",
+        "name": "loadResourceList",
+        "type": "FunctionDeclaration",
+        "paramnames": [
+          "thisModule"
+        ]
+      },
+      "vars": {
+        "callThese": "loadResourceList~callThese",
+        "thisModule.loaded": "thisModule.loaded",
+        "thisModule.loadedCallbacks": "thisModule.loadedCallbacks",
+        "": null,
+        "resource": "loadResourceList~resource",
+        "url_1": "loadResourceList~url_1",
+        "thisModule.resourceToLoad": "thisModule.resourceToLoad"
+      }
+    },
+    "description": "Ensure that an extension is loaded\n\nCall the {loaded} completion function when the extension is loaded,\nwhich may be immediately when this function is called subsequent to\na successful load.",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "name"
+          ]
+        },
+        "description": "Extension name (e.g., 'd3')",
+        "name": "thisModule"
+      },
+      {
+        "type": {
+          "names": [
+            "loaded"
+          ]
+        },
+        "description": "on successful load",
+        "name": "Called"
+      }
+    ],
+    "name": "loadResourceList",
+    "longname": "loadResourceList",
+    "kind": "function",
+    "scope": "global",
+    "$longname": "loadResourceList",
+    "$kind": "method",
+    "$docmaLink": "api/#loadResourceList"
+  }
+]
